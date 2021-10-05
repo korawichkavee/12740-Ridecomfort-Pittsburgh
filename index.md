@@ -29,6 +29,7 @@ We will use the following sensors to measure data:
   1. Vibration sensor to measure vibrations/accelerations.
   2. Sound detection sensor to measure the noise of the vehicle.
   3. Temperature and humidity sensor to measure temperature and humidity.
+
 We will fix our sensors to each vehicle while in motion and take samples.
 Note that a more in depth description of these sensors is outlined later, below.
 
