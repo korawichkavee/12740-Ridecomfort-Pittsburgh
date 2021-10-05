@@ -3,6 +3,7 @@
 Members = [Korawich, Jacobo, Guillermo, and Albin].
 
 video link:
+
 website link: [Github Project](https://korawichkavee.github.io/12740-Ridecomfort-Pittsburgh/)
 
 # Introduction and Motivation
