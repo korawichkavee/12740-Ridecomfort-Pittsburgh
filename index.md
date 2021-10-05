@@ -3,10 +3,7 @@
 Members = [Korawich, Jacobo, Guillermo, and Albin].
 
 video link:
-
-You can use the [editor on GitHub](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+website link: [Github Project](https://korawichkavee.github.io/12740-Ridecomfort-Pittsburgh/)
 
 # Introduction and Motivation
 Depending on how close you live to CMU, getting to campus can take many forms. Regardless of which mode of transport is used, each has its benefits. Taking a car might save time, taking a bus might save money, and riding a bike or scooter might be the most practical. While these measures can be quantified based on time, cost, or both, one of the most critical aspects of these rides cannot be easily quantified: comfort. Attempting to measure the comfort of each of these rides is crucial in ultimately understanding the full range of benefits and disadvantages of each most of transportation. This analysis will use quantitative data to evaluate the comfort of each mode of public or private transport to campus.
@@ -56,6 +53,10 @@ After the code and circuit has been fine-tuned, we need to test our sensors on r
 
 
 -------------------------------------------------------------------
+You can use the [editor on GitHub](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+
+Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
