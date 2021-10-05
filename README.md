@@ -16,3 +16,18 @@ We will conduct sensing for three modes of transportation:
   3. Scooter/bike 
   
 For each measured aspect and mode of transportation, we will analyze and compare obtained values to determine the comfort levels of each ride.
+
+# Sensors
+We will use the following sensors to measure data:
+  1. Vibration sensor to measure vibrations/accelerations.
+  2. Sound detection sensor to measure the noise of the vehicle.
+  3. Temperature and humidity sensor to measure temperature and humidity.
+We will fix our sensors to each vehicle while in motion and take samples.
+
+# Progress
+
+# Methods
+
+# Experiment and Results
+
+# Discussion
