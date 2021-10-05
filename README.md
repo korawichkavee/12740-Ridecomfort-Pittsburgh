@@ -25,9 +25,13 @@ We will use the following sensors to measure data:
 We will fix our sensors to each vehicle while in motion and take samples.
 
 # Progress
+## Current Progress
+
 
 # Methods
 
+
 # Experiment and Results
+
 
 # Discussion
