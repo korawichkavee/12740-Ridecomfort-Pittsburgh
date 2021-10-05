@@ -10,4 +10,9 @@ We will quantify the comfort of a ride based on three primary factors:
   2. Sound volumes throughout the ride
   3. Temperature and humidity of the vehicle
 
-Using sensors to sample the vibrations, sounds, temperature, and humidity in a setting, we will ultimately compare the obtained values for each of three modes of transportation (bus, car, and scooter/bike) and determine the comfort levels of each mode of transport.
+We will conduct sensing for three modes of transportation:
+  1. Bus 
+  2. Car
+  3. Scooter/bike 
+  
+For each measured aspect and mode of transportation, we will analyze and compare obtained values to determine the comfort levels of each ride.
