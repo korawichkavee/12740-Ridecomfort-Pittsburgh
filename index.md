@@ -34,6 +34,7 @@ Note that a more in depth description of these sensors is outlined later, below.
 # Progress
 ## Current Progress
 Our main goal at the moment is to successfully code and build the circuit for the sensors to the RaspberryPi. Our vibration sensor was not functional so we had to buy a new one, which was finally delivered on 10/4.
+
 We are still working out bugs in our code because the vibration sensor (accelerometer) measurements are not outputting correctly.
 ## Future Plan
 After the code and circuit has been fine-tuned, we need to test our sensors on rides on each mode of transport. Then, we will need to post-process data to compare the comfort levels form each ride.
