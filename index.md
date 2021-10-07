@@ -55,11 +55,12 @@ We saw a transformation function for the accelerometer provided by the manufactu
 
 After checking connections and circuit wiring, testing sensors, and checking code, we still could not resolve the issues we were seeing yesterday. However, we soldered the accelerometer to the pins to ensure a strong, sustained electrical connection between the sensor and the breadboard. This seems to finally have resolved the issue, as we obtained values that made sense: a range of positive and negative accelerations when we vibrated the sensor.
 
-We also began to callibrate the accelerometer.
+We also callibrated the z-axis of the accelerometer.
 
 
 10/7/2021 update
 
+We successfully wired the sound sensor: identifying and addressing potential issues with sampling frequency associated with the sensor. We then calibrated the sensor output to a loudness.
 
 
 ### Future Plan
