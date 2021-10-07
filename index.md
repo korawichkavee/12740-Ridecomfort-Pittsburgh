@@ -47,6 +47,18 @@ We tried to run the accelerometer and sound sensor that arrived yesterday with t
 
 We saw a transformation function for the accelerometer provided by the manufacturer (Adafruit) but is in terms of the digital raw values, which are very erratic and we suspect that something is not working properly with those values. 
 
+
+10/6/2021 update
+
+After checking connections and circuit wiring, testing sensors, and checking code, we still could not resolve the issues we were seeing yesterday. However, we soldered the accelerometer to the pins to ensure a strong, sustained electrical connection between the sensor and the breadboard. This seems to finally have resolved the issue, as we obtained values that made sense: a range of positive and negative accelerations when we vibrated the sensor.
+
+We also began to callibrate the accelerometer.
+
+
+10/7/2021 update
+
+
+
 ### Future Plan
 After the code and circuit has been fine-tuned, we need to test our sensors on rides on each mode of transport. Then, we will need to post-process data to compare the comfort levels form each ride.
 
