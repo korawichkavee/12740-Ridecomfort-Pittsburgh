@@ -75,44 +75,15 @@ After the code and circuit has been fine-tuned, we need to test our sensors on r
 
 
 ## Sensors Used - In Depth
-
-
+| Sensor | Description | Physical Principle | Characteristics | Additional Notes |
+| ----------- | ----------- | ----------- | ----------- | ----------- |
+| Microphone | Adafruit AGC Electret Microphone Amplifier - MAX9814 [^1] | The working principle of an electret condenser microphone is that the diaphragm acts as one plate of a capacitor. Vibrations produce changes in the distance between the diaphragm and the back plate. ... This change in voltage is amplified by the FET and the audio signal appears at the output, after a dc-blocking capacitor. [^2] | <ul><li>Supply Voltage: 2.7v-5.5v @ 3mA current</li><li>Output: 2Vpp on 1.25V bias</li></li><li>Frequency Response: 20Hz - 20 KHz</ul> | Add notes here |
+| Accelerometer | Add description here | Add the phyisical principle of the sensor here | Add specs here | Add notes here |
+| Temperature and Humidity | Add description here | Add the phyisical principle of the sensor here | Add specs here | Add notes here |
 
 
 
 -------------------------------------------------------------------
-You can use the [editor on GitHub](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## References and Footnotes
+[^1]: https://www.cuidevices.com/product-spotlight/electret-condenser-microphones
+[^2]: https://learn.adafruit.com/adafruit-agc-electret-microphone-amplifier-max9814/
