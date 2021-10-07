@@ -33,8 +33,9 @@ Who has not had the annoying situation of having to hear a car blasting off musi
 ### Temperature and humidity 
 Temperature and humidity can affect how a human feels during a ride. For instance, a warm and humid sensation would make someone start to sweat more easily and make a ride unpleasant. Thus, using sensor to measure temperature and humidity would give us an outcome that one can measure if the temperature and humidity is inside the human comfort location.
 
-**In order to take relevant measurements, the sensors were fixed to each vehicle while in motion, near the human position (where someone normally sits/stands on) to take samples during the trip and assess the differences between types of transportation.
-Note that a more in depth description of these sensors is outlined later, below.**
+**In order to take relevant measurements, the sensors were fixed to each vehicle while in motion, near the human position (where someone normally sits/stands on) to take samples during the trip and assess the differences between types of transportation.**
+
+**Note that a more in depth description of these sensors is outlined later, below.**
 
 ## Progress
 ### Current Progress
