@@ -1,10 +1,10 @@
-# Welcome to GitHub Pages [Data Acq: Ride comfort of different modes of transportation in Pittsburgh]
+# Ride comfort of different modes of transportation in Pittsburgh
 
-Members = [Korawich, Jacobo, Guillermo, and Albin].
+**Members: Korawich Kavee, Jacobo Kirsch Tornell, Guillermo Montero, and Albin Wells**
 
-video link:
+Video Link:
 
-website link: [Github Project](https://korawichkavee.github.io/12740-Ridecomfort-Pittsburgh/)
+Website Link: [Github Project](https://korawichkavee.github.io/12740-Ridecomfort-Pittsburgh/)
 
 ## Introduction and Motivation
 There are many travel options to and from the Carnegie Mellon University Pittsburgh Campus. Depending on how close you live to CMU, your mode of transportation, or your budget, a specific option usually fits your needs. For instance, taking a car might save time, but riding the bus might save money, and riding a bike or scooter might be more practical. While these measures can be quantified by time, cost, or both, one of the most critical aspects to consider that different transportation options cannot easily quantify: **comfort**. Attempting to measure the comfort of each of these rides is crucial in ultimately understanding the full range of benefits and downfalls of most transportation options.
@@ -13,26 +13,28 @@ The objective is to create a framework to better estimate comfort using differen
 
 
 ## Goals
-We will quantify the comfort of a ride based on three primary factors:
-  1. Vibrations within the vehicle
-  2. Sound volumes throughout the ride
+The overall goal of this project is to create a framework to measure passenger comfort from different types of transportation. In order to quantify the comfort of a ride based on three primary factors:
+  1. Vibrations and movement within the vehicle
+  2. Noises present throughout the ride
   3. Temperature and humidity of the vehicle
 
-We will conduct sensing for three modes of transportation:
-  1. Bus 
-  2. Car
-  3. Scooter/bike 
+To understand the benefits and hindrances of different types of transportation, three different vehicles were sensed to obtain an array of results. The three modes of transportation are the bus (encompassing the public transportation type of vehicles), car (comprising private ride and ride-share options), and scooter (which embodies alternatives to traditional transport, including the bicycle). 
   
-For each measured aspect and mode of transportation, we will analyze and compare obtained values to determine the comfort levels of each ride.
+For each measured aspect and type of transportation, there will be an analysis and comparison discussion based on obtained values to quantify the comfort levels of a *ride*.
 
 ## Sensors
-We will use the following sensors to measure data:
-  1. Vibration sensor to measure vibrations/accelerations.
-  2. Sound detection sensor to measure the noise of the vehicle.
-  3. Temperature and humidity sensor to measure temperature and humidity.
+The following sensors were chosen to measure data, and get an assessment of comfort that can be quantifiable.
+### Vibration and Movement
+One of the main aspects that one can attribute to comfort is a smooth ride. That is why adding a vibration sensor to measure accelerations differences during the traveling time would be able to determine if the ride was pleasant.
 
-We will fix our sensors to each vehicle while in motion and take samples.
-Note that a more in depth description of these sensors is outlined later, below.
+### Noise and Sound 
+Who has not had the annoying situation of having to hear a car blasting off music while going to a place. Noises, especially loud and sharp, irritate someone very easily. Hence, detecting the noise while travelling can also quantify comfort. 
+
+### Temperature and humidity 
+Temperature and humidity can affect how a human feels during a ride. For instance, a warm and humid sensation would make someone start to sweat more easily and make a ride unpleasant. Thus, using sensor to measure temperature and humidity would give us an outcome that one can measure if the temperature and humidity is inside the human comfort location.
+
+**In order to take relevant measurements, the sensors were fixed to each vehicle while in motion, near the human position (where someone normally sits/stands on) to take samples during the trip and assess the differences between types of transportation.
+Note that a more in depth description of these sensors is outlined later, below.**
 
 ## Progress
 ### Current Progress
