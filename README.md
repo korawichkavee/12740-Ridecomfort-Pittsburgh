@@ -8,7 +8,7 @@ https://korawichkavee.github.io/12740-Ridecomfort-Pittsburgh/
 
 *THIS IS NOT THE GH-PAGE*
 
-**THERE ARE 2 BRANCHES*
+**THERE ARE 2 BRANCHES**
 
 List of member.
 
