@@ -24,6 +24,7 @@ For each measured aspect and type of transportation, there will be an analysis a
 
 ## Sensors
 The following sensors were chosen to measure data, and get an assessment of comfort that can be quantifiable.
+
 ### Vibration and Movement
 One of the main aspects that one can attribute to comfort is a smooth ride. That is why adding a vibration sensor to measure accelerations differences during the traveling time would be able to determine if the ride was pleasant.
 
@@ -60,7 +61,7 @@ We also callibrated the z-axis of the accelerometer.
 
 *10/7/2021 update*
 
-We successfully wired the sound sensor: identifying and addressing potential issues with sampling frequency associated with the sensor. We then calibrated the sensor output to a loudness.
+We successfully wired the sound sensor (microphone): identifying and addressing potential issues with sampling frequency associated with the sensor. We then calibrated the sensor output to a loudness.
 
 
 ### Future Plan
