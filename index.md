@@ -44,21 +44,21 @@ Our main goal at the moment is to successfully code and build the circuit for th
 We are still working out bugs in our code because the vibration sensor (accelerometer) measurements are not outputting correctly.
 
 
-10/5/2021 update
+*10/5/2021 update*
 
 We tried to run the accelerometer and sound sensor that arrived yesterday with the Raspberry Pi, and we are having trouble in interpreting the data that the AD converter is giving us. Although we detect variation in the voltage when the sensors are stimulated, we still cannot convert that parameter into a magnitude of our interest, like m/s2 or g for acceleration and db for sound.
 
 We saw a transformation function for the accelerometer provided by the manufacturer (Adafruit) but is in terms of the digital raw values, which are very erratic and we suspect that something is not working properly with those values. 
 
 
-10/6/2021 update
+*10/6/2021 update*
 
 After checking connections and circuit wiring, testing sensors, and checking code, we still could not resolve the issues we were seeing yesterday. However, we soldered the accelerometer to the pins to ensure a strong, sustained electrical connection between the sensor and the breadboard. This seems to finally have resolved the issue, as we obtained values that made sense: a range of positive and negative accelerations when we vibrated the sensor.
 
 We also callibrated the z-axis of the accelerometer.
 
 
-10/7/2021 update
+*10/7/2021 update*
 
 We successfully wired the sound sensor: identifying and addressing potential issues with sampling frequency associated with the sensor. We then calibrated the sensor output to a loudness.
 
