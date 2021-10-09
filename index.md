@@ -61,27 +61,40 @@ We also callibrated the z-axis of the accelerometer.
 
 *10/7/2021 update*
 
-We successfully wired the sound sensor (microphone): identifying and addressing potential issues with sampling frequency associated with the sensor. We then calibrated the sensor output to a loudness.
+We successfully wired the sound sensor (microphone): identifying and addressing potential issues with sampling frequency associated with the sensor. We then calibrated the sensor output to a loudness. Another calibration had to be done to convert the micropone output into decibels, which was particularly challenging. This was validated by comparing sensor output to measured sound from an iPhone app.
 
 
-### Future Plan
-After the code and circuit has been fine-tuned, we need to test our sensors on rides on each mode of transport. Then, we will need to post-process data to compare the comfort levels form each ride.
+*10/9/2021 update*
+
+We went out to take out data today and were successful. We measured sound, vibration, temperature, and humidity of the bus, car, and scooter over a designated route. We initially had some trouble with the portable battery connecting to the RaspberryPi, but we replaced a faulty USB-c cable and it worked out well in the end.
 
 ## Methods
 
+### Phenomena of Interest
+As mentioned above, we are interested in quantifying and comparing the comfort of various modes of transportation. We identified a few contributing factors to comfort, which include noise level, vibrations, temperature, and humidity. Ultimately, these are the phenomena we are sensing.
 
-## Experiment and Results
+The temperature and humidity are both relatively static signals. Especially considering the short time scale of our study (~3 to 8 minutes) these signals are unlikely to change, and, if they do, they are unlikely to change by very much. Thus, a very low sampling frequency can adequetely capture and characterize these signals. In fact, sampling one point might be sufficient to understand the temperature and humidity in each mode of transportation, although it is still better to obtain multiple samples throoughout the ride. Theoretically, depending on the weather conditions, the temperature in a car could change with heating or air conditioning over the 3-8 minute time period of our test.
 
+Sensing vibrations is much more challenging. This is a dynamic, aperiod signal. While we expect the signal to be 'centered' around 1g, sporadic motion from the vehicles causes it to vary at random intervals. These variations tend to be a function of external sources, such as potholes and road conditions, stops and traffic lights, other cars, driving habits, etc. Thus, we cannot expect a consistent, periodic signal. Instead, we sample the signal at a rate high enough to capture these sudden variations in acceleration and use this to quantify the vibrations during the ride.
 
-## Discussion
+Sound sensing poses and entirely new set of challenges. Sound signals are dynamic, periodic signals that cover a very large range of frequencies (up to and above 1kHz). Due to limitations of the sensors and equipment, sampling rate is severely limited to the point where effectively all sound signals are aliased. Thus, trying to determine the sound wave frequencies is futile. Instead, we focus our efforts on measuring volume: magnitude of the sound waves. This magnitude is converted into decibels to easily compare to human comfort levels.
 
-
-## Sensors Used - In Depth
+### Sensors Used - In Depth
 | Sensor | Description | Physical Principle | Characteristics | Additional Notes |
 | ----------- | ----------- | ----------- | ----------- | ----------- |
 | Microphone | Adafruit AGC Electret Microphone Amplifier - MAX9814 [^1] | The working principle of an electret condenser microphone is that the diaphragm acts as one plate of a capacitor. Vibrations produce changes in the distance between the diaphragm and the back plate. ... This change in voltage is amplified by the FET and the audio signal appears at the output, after a dc-blocking capacitor. [^2] | <ul><li>Supply Voltage: 2.7v-5.5v @ 3mA current</li><li>Output: 2Vpp on 1.25V bias</li></li><li>Frequency Response: 20Hz - 20 KHz</ul> | Add notes here |
 | Accelerometer | Add description here | Add the phyisical principle of the sensor here | Add specs here | Add notes here |
 | Temperature and Humidity | Add description here | Add the phyisical principle of the sensor here | Add specs here | Add notes here |
+
+### Signal Conditioning and Processing
+Describe the signal conditioning and processing procedure
+
+## Experiment and Results
+Describe the experiments you did and present the results; Use tables and plots if possible
+
+## Discussion
+Discuss the insights from the project
+
 
 
 
