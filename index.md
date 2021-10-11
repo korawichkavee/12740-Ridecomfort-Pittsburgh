@@ -2,7 +2,7 @@
 
 **Members: Korawich Kavee, Jacobo Kirsch Tornell, Guillermo Montero, and Albin Wells**
 
-Video Link:
+Video Link: [Ride Comfort Video](https://www.youtube.com/watch?v=bcNrlpfi9SA&ab_channel=KorawichKavee)
 
 Website Link: [Github Project](https://korawichkavee.github.io/12740-Ridecomfort-Pittsburgh/)
 
