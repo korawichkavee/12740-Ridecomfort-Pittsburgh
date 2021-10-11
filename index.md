@@ -66,7 +66,7 @@ We successfully wired the sound sensor (microphone): identifying and addressing 
 
 *10/9/2021 update*
 
-We went out to take out data today and were successful. We measured sound, vibration, temperature, and humidity of the bus, car, and scooter over a designated route. We initially had some trouble with the portable battery connecting to the RaspberryPi, but we replaced a faulty USB-c cable and it worked out well in the end.
+We went out and successfully obtained data from each mode of transportation today. We measured sound, vibration, temperature, and humidity of the bus, car, and scooter over a designated route. We initially had some trouble with the portable battery connecting to the RaspberryPi, but we replaced a faulty USB-c cable and it worked out well in the end.
 
 ## Methods
 
@@ -90,7 +90,9 @@ Sound sensing poses and entirely new set of challenges. Sound signals are dynami
 Describe the signal conditioning and processing procedure
 
 ## Experiment and Results
-Describe the experiments you did and present the results; Use tables and plots if possible
+To carry out our tests, we measured the comfort of each type of ride for a stretch of road from the corner of S Negley Ave and Fifth Ave to the corner of Morewood Ave and Fifth Ave. This is a common route for students from Shadyside to travel to school. For each mode of tranportation, we placed and firmly held the sensors in place between the feet of where we would sit or stand. We started and ended sampling at the same location for each mode of transportation, so the amount of time varied for slower modes of transportation (the scooter especially). In each case, we did not talk or make noise during testing so that any sound levels were from the surrounding environment.
+
+RESULTS - DATA AND PLOTS
 
 ## Discussion
 Discuss the insights from the project
