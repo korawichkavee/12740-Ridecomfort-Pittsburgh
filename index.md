@@ -2,6 +2,8 @@
 
 **Members: Korawich Kavee, Jacobo Kirsch Tornell, Guillermo Montero, and Albin Wells**
 
+## TO DO: (1) Finish sensor spec sheet (with citations), (2) add graphs and discussion on results, (3) add final conclusions
+
 Video Link: [Ride Comfort Video](https://www.youtube.com/watch?v=bcNrlpfi9SA&ab_channel=KorawichKavee)
 
 Website Link: [Github Project](https://korawichkavee.github.io/12740-Ridecomfort-Pittsburgh/)
@@ -105,22 +107,15 @@ An outline of the sensor descriptions and specifications is show in Table 1. The
 ![Final sensor and RaspberryPi setup!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/WhatsApp%20Image%202021-10-08%20at%203.13.27%20PM.jpeg)
 
 ### Signal Conditioning and Processing
-Describe the signal conditioning and processing procedure
+In order to collect, condition, and process signal data, we set up a Python code. This source code can be accessed through the link at the top of this page. The smart comfort file is used to run our experiment, while the test codes are only used for initial calibration and testing of individual sensors. When running the experiment, we first create a new csv file to store the time and all sensor outputs. Then, we create a button parameter that links to the RaspberryPi to control the start and stop of sensing on the breadboard, instead of solely through the computer. While the temperature and humidity sensor gives a digital output and connects straight to the RaspberryPi, the sound and vibration sensors are passed through an A/D converter before reaching the RaspberryPi.
 
-dht11 is imported into smart comfort. smart comfort actually runs the code. dht is a little unique so this sint necessary for sound and vibration.
-the test codes are simply for testing the sensors--this connects straight to the rPi not the AD converter. already gives digital value
+We define a samply frequency of 20 Hz, which actually samples at 6.8 Hz due to limitations of the hardware and CPU. While this sampling frequency is not nearly high enough to detect sound freqeuncies and might miss some subtle vibrations, the frequency still captures the general trends of the rides and the magnitudes of sounds and accelerations. Ultimately, this is sufficient for capturing the volume of noise, which is a more critical aspect of assessing comfort from sound. As temperature and humidity are static signals, this sampling rate is appropriate for those signals.
 
-we import necessary libraries for the program
-first we create a new csv file in the desired directory with headings of timestamp, sensor 1, 2, 3, 4. this is where we will store the data
-we the create a button parameter linking to the raspberryPi to control the start and stop of sensing
-sound and vibration sensors are connected to AD converter
-we selected a frequency 6.8 Hz for sampling (we define 20 Hz but in reality it samples at 6.8Hz due to the limited power of the CPU or hardware)
-we then calibrate the vibration sensor by converting the raw data into actual acceleration--calibrate 3 points by rotating sensor to a known value and observing outputs
-we calibrate the microphone by similarly converting raw values into dB--calibrate using known decibal output from the phone and converting raw data to known value
+The accelerometer was then calibrated to convert raw data into actual acceleration. This was done using three known points by placing the accelerometer flat facing upwards, sideways, and upside down. The z-axis value of the accelerometer was converted in relation to gravity in each position: g, 0, and -g, respectively. The microphone was similarly calibrated by testing the sensor at a constant sound loudness. A smartphone was used to measure the volume of sound in decibals at various loudnesses, and compared to the raw data. A linear function was used to derive a conversion from the raw data into a decibal output for volume.
 
-when we run, it reads each sensor and then writes it to the initial file, waits the 1/freq., and the samples again until the button stops it.
+When running the code, the RaspberryPi takes the values from each sensor and writes it into our initially created file. Then, it waits for the time period determined by the frequency, and repeats the process immediately after this wait. When the button is pressed again or the program is stopped on the computer, the RaspberryPi stops taking measurements. The file is closed and saved into the desired folder, and we have the obtained data for each sensor in a csv file format.
 
-**To see the source code used, follow the link at the top of this page**
+**Reminder: to see the source code used, follow the link at the top of this page**
 
 ## Experiment and Results
 We measured the comfort of each type of ride for a stretch of road from the corner of S Negley Ave and Fifth Ave to the corner of Morewood Ave and Fifth Ave. This is a common route for students from Shadyside to travel to school. To carry out our tests, we securely fastened the RaspberryPi and breadboard with sensors in an open box. For each mode of tranportation, we placed and firmly held or taped the box in place on the ground between the feet of where we would sit or stand. We started and ended sampling at the same location for each mode of transportation, so the amount of time varied for slower modes of transportation (the scooter especially). In each case, we did not talk or make noise during testing so that any sound levels were from the surrounding environment.
