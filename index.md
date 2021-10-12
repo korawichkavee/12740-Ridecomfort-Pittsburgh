@@ -128,7 +128,8 @@ We measured the comfort of each type of ride for a stretch of road from the corn
 
 ### Vibrations Results
 
-
+![Acceleration Fourier!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/Frequency%20Content.png)
+![Acceleration record!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/Acceleration%20Records.png)
 
 ### Temperature and Humidity Results
 
