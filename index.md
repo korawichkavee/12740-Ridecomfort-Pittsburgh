@@ -92,7 +92,17 @@ Describe the signal conditioning and processing procedure
 ## Experiment and Results
 We measured the comfort of each type of ride for a stretch of road from the corner of S Negley Ave and Fifth Ave to the corner of Morewood Ave and Fifth Ave. This is a common route for students from Shadyside to travel to school. To carry out our tests, we securely fastened the RaspberryPi and breadboard with sensors in an open box. For each mode of tranportation, we placed and firmly held or taped the box in place on the ground between the feet of where we would sit or stand. We started and ended sampling at the same location for each mode of transportation, so the amount of time varied for slower modes of transportation (the scooter especially). In each case, we did not talk or make noise during testing so that any sound levels were from the surrounding environment.
 
-RESULTS - DATA AND PLOTS
+### Noise Results
+
+
+
+### Vibrations Results
+
+
+
+### Temperature and Humidity Results
+
+
 
 ## Discussion
 Discuss the insights from the project
