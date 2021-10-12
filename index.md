@@ -36,7 +36,14 @@ Who has not had the annoying situation of having to hear a car blasting off musi
 ### Temperature and humidity 
 Temperature and humidity can affect how a human feels during a ride. For instance, a warm and humid sensation would make someone start to sweat more easily and make a ride unpleasant. Thus, using sensor to measure temperature and humidity would give us an outcome that one can measure if the temperature and humidity is inside the human comfort location.
 
+### Sensor Images
+The microphone (left) and accelerometer (right) are shown in the figure below.
+
 ![The microphone (left) and accelerometer (right)!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/0577d09c-f731-45a8-9509-2cb6770de479.jpeg)
+
+The temperature and humidity sensor is show in the photo below.
+
+![The temperature and humidity sensor!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/Screen%20Shot%202021-10-12%20at%2012.13.28%20PM.png)
 
 **In order to take relevant measurements, the sensors were fixed to each vehicle while in motion, near the human position (where someone normally sits/stands on) to take samples during the trip and assess the differences between types of transportation.**
 
@@ -89,6 +96,10 @@ Sound sensing poses and entirely new set of challenges. Sound signals are dynami
 | Microphone | Adafruit AGC Electret Microphone Amplifier - MAX9814 [^1] | The working principle of an electret condenser microphone is that the diaphragm acts as one plate of a capacitor. Vibrations produce changes in the distance between the diaphragm and the back plate. ... This change in voltage is amplified by the FET and the audio signal appears at the output, after a dc-blocking capacitor. [^2] | <ul><li>Supply Voltage: 2.7v-5.5v @ 3mA current</li><li>Output: 2Vpp on 1.25V bias</li></li><li>Frequency Response: 20Hz - 20 KHz</ul> | Add notes here |
 | Accelerometer | Add description here | Add the phyisical principle of the sensor here | Add specs here | Add notes here |
 | Temperature and Humidity | Add description here | Add the phyisical principle of the sensor here | Add specs here | Add notes here |
+
+The final sensor setup with the RaspberryPi is displayed in the figure below.
+
+![Final sensor and RaspberryPi setup!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/WhatsApp%20Image%202021-10-08%20at%203.13.27%20PM.jpeg)
 
 ### Signal Conditioning and Processing
 Describe the signal conditioning and processing procedure
