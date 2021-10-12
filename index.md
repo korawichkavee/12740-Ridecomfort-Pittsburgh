@@ -28,20 +28,20 @@ For each measured aspect and type of transportation, there will be an analysis a
 The following sensors were chosen to measure data, and get an assessment of comfort that can be quantifiable.
 
 ### Vibration and Movement
-One of the main aspects that one can attribute to comfort is a smooth ride. That is why adding a vibration sensor to measure accelerations differences during the traveling time would be able to determine if the ride was pleasant.
+One of the main aspects that one can attribute to comfort is a smooth ride. That is why adding a vibration sensor to measure accelerations differences during the traveling time would be able to determine if the ride was pleasant. The accelerometer we used is shown in Figure 1 below.
 
 ### Noise and Sound 
-Who has not had the annoying situation of having to hear a car blasting off music while going to a place. Noises, especially loud and sharp, irritate someone very easily. Hence, detecting the noise while travelling can also quantify comfort. 
+Who has not had the annoying situation of having to hear a car blasting off music while going to a place. Noises, especially loud and sharp, irritate someone very easily. Hence, detecting the noise while travelling can also quantify comfort. The microphone sensor measuring these noises can be seen in Figure 1 below. 
 
 ### Temperature and humidity 
-Temperature and humidity can affect how a human feels during a ride. For instance, a warm and humid sensation would make someone start to sweat more easily and make a ride unpleasant. Thus, using sensor to measure temperature and humidity would give us an outcome that one can measure if the temperature and humidity is inside the human comfort location.
+Temperature and humidity can affect how a human feels during a ride. For instance, a warm and humid sensation would make someone start to sweat more easily and make a ride unpleasant. Thus, using sensor to measure temperature and humidity would give us an outcome that one can measure if the temperature and humidity is inside the human comfort location (See Figure 2 below).
 
 ### Sensor Images
-The microphone (left) and accelerometer (right) are shown in the figure below.
+Figure 1: The microphone (left) and accelerometer (right)
 
 ![The microphone (left) and accelerometer (right)!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/0577d09c-f731-45a8-9509-2cb6770de479.jpeg)
 
-The temperature and humidity sensor is show in the photo below.
+Figure 2: The temperature and humidity sensor
 
 ![The temperature and humidity sensor!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/Screen%20Shot%202021-10-12%20at%2012.13.28%20PM.png)
 
@@ -91,13 +91,16 @@ Sensing vibrations is much more challenging. This is a dynamic, aperiod signal. 
 Sound sensing poses and entirely new set of challenges. Sound signals are dynamic, periodic signals that cover a very large range of frequencies (up to and above 1kHz). Due to limitations of the sensors and equipment, sampling rate is severely limited to the point where effectively all sound signals are aliased. Thus, trying to determine the sound wave frequencies is futile. Instead, we focus our efforts on measuring volume: magnitude of the sound waves. This magnitude is converted into decibels to easily compare to human comfort levels.
 
 ### Sensors Used - In Depth
+An outline of the sensor descriptions and specifications is show in Table 1. The final setup of the sensor with the RaspberryPi is shown in Figure 3 below.
+
+Table 1: Sensor descriptions and specifications
 | Sensor | Description | Physical Principle | Characteristics | Additional Notes |
 | ----------- | ----------- | ----------- | ----------- | ----------- |
 | Microphone | Adafruit AGC Electret Microphone Amplifier - MAX9814 [^1] | The working principle of an electret condenser microphone is that the diaphragm acts as one plate of a capacitor. Vibrations produce changes in the distance between the diaphragm and the back plate. ... This change in voltage is amplified by the FET and the audio signal appears at the output, after a dc-blocking capacitor. [^2] | <ul><li>Supply Voltage: 2.7v-5.5v @ 3mA current</li><li>Output: 2Vpp on 1.25V bias</li></li><li>Frequency Response: 20Hz - 20 KHz</ul> | Add notes here |
 | Accelerometer | Add description here | Add the phyisical principle of the sensor here | Add specs here | Add notes here |
 | Temperature and Humidity | Add description here | Add the phyisical principle of the sensor here | Add specs here | Add notes here |
 
-The final sensor setup with the RaspberryPi is displayed in the figure below.
+Figure 3: The final sensor setup with the RaspberryPi
 
 ![Final sensor and RaspberryPi setup!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/WhatsApp%20Image%202021-10-08%20at%203.13.27%20PM.jpeg)
 
