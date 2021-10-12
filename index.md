@@ -73,7 +73,7 @@ We went out and successfully obtained data from each mode of transportation toda
 ### Phenomena of Interest
 As mentioned above, we are interested in quantifying and comparing the comfort of various modes of transportation. We identified a few contributing factors to comfort, which include noise level, vibrations, temperature, and humidity. Ultimately, these are the phenomena we are sensing.
 
-The temperature and humidity are both relatively static signals. Especially considering the short time scale of our study (~3 to 8 minutes) these signals are unlikely to change, and, if they do, they are unlikely to change by very much. Thus, a very low sampling frequency can adequetely capture and characterize these signals. In fact, sampling one point might be sufficient to understand the temperature and humidity in each mode of transportation, although it is still better to obtain multiple samples throoughout the ride. Theoretically, depending on the weather conditions, the temperature in a car could change with heating or air conditioning over the 3-8 minute time period of our test.
+The temperature and humidity are both relatively static signals. Especially considering the short time scale of our study (~2 to 8 minutes) these signals are unlikely to change, and, if they do, they are unlikely to change by very much. Thus, a very low sampling frequency can adequetely capture and characterize these signals. In fact, sampling one point might be sufficient to understand the temperature and humidity in each mode of transportation, although it is still better to obtain multiple samples throoughout the ride. Theoretically, depending on the weather conditions, the temperature in a car could change with heating or air conditioning over the 2-8 minute time period of our test.
 
 Sensing vibrations is much more challenging. This is a dynamic, aperiod signal. While we expect the signal to be 'centered' around 1g, sporadic motion from the vehicles causes it to vary at random intervals. These variations tend to be a function of external sources, such as potholes and road conditions, stops and traffic lights, other cars, driving habits, etc. Thus, we cannot expect a consistent, periodic signal. Instead, we sample the signal at a rate high enough to capture these sudden variations in acceleration and use this to quantify the vibrations during the ride.
 
@@ -88,6 +88,8 @@ Sound sensing poses and entirely new set of challenges. Sound signals are dynami
 
 ### Signal Conditioning and Processing
 Describe the signal conditioning and processing procedure
+
+LETS ALSO TALK ABOUT THE SAMPLING FREQUENCY AND HOW THAT WAS CHOSEN
 
 ## Experiment and Results
 We measured the comfort of each type of ride for a stretch of road from the corner of S Negley Ave and Fifth Ave to the corner of Morewood Ave and Fifth Ave. This is a common route for students from Shadyside to travel to school. To carry out our tests, we securely fastened the RaspberryPi and breadboard with sensors in an open box. For each mode of tranportation, we placed and firmly held or taped the box in place on the ground between the feet of where we would sit or stand. We started and ended sampling at the same location for each mode of transportation, so the amount of time varied for slower modes of transportation (the scooter especially). In each case, we did not talk or make noise during testing so that any sound levels were from the surrounding environment.
