@@ -88,7 +88,7 @@ We went out and successfully obtained data from each mode of transportation toda
 ### Phenomena of Interest
 As mentioned above, we are interested in quantifying and comparing the comfort of various modes of transportation. We identified a few contributing factors to comfort, which include noise level, vibrations, temperature, and humidity. Ultimately, these are the phenomena we are sensing.
 
-The temperature and humidity are both relatively static signals. Especially considering the short time scale of our study (~2 to 5 minutes) these signals are unlikely to change, and, if they do, they are unlikely to change by very much. Thus, a very low sampling frequency can adequetely capture and characterize these signals. In fact, sampling one point might be sufficient to understand the temperature and humidity in each mode of transportation, although it is still better to obtain multiple samples throoughout the ride. Theoretically, depending on the weather conditions, the temperature in a car could change with heating or air conditioning over the 2-5 minute time period of our test.
+The temperature and humidity are both relatively static signals. Especially considering the short time scale of our study (~2 to 5 minutes) these signals are unlikely to change, and, if they do, they are unlikely to change by very much. Thus, a very low sampling frequency can adequetely capture and characterize these signals. In fact, sampling one point might be sufficient to understand the temperature and humidity in each mode of transportation, although it is still better to obtain multiple samples throoughout the ride. Theoretically, depending on the weather conditions, the temperature in a car could change with heating or air conditioning over the 2-5 minute time period of our test. During this analysis, it is important to keep in mind the optimal human comfort zome between 22 C to 27 C and 40-60% relative humidity. [^1]
 
 Sensing vibrations is much more challenging. This is a dynamic, aperiod signal. While we expect the signal to be 'centered' around 1g, sporadic motion from the vehicles causes it to vary at random intervals. These variations tend to be a function of external sources, such as potholes and road conditions, stops and traffic lights, other cars, driving habits, etc. Thus, we cannot expect a consistent, periodic signal. Instead, we sample the signal at a rate high enough to capture these sudden variations in acceleration and use this to quantify the vibrations during the ride.
 
@@ -100,7 +100,7 @@ An outline of the sensor descriptions and specifications is show in Table 1. The
 *Table 1: Sensor descriptions and specifications*
 | Sensor | Description | Physical Principle | Characteristics | Additional Notes |
 | ----------- | ----------- | ----------- | ----------- | ----------- |
-| Microphone | Adafruit AGC Electret Microphone Amplifier - MAX9814 [^1] | The working principle of an electret condenser microphone is that the diaphragm acts as one plate of a capacitor. Vibrations produce changes in the distance between the diaphragm and the back plate. ... This change in voltage is amplified by the FET and the audio signal appears at the output, after a dc-blocking capacitor. [^2] | <ul><li>Supply Voltage: 2.7v-5.5v @ 3mA current</li><li>Output: 2Vpp on 1.25V bias</li></li><li>Frequency Response: 20Hz - 20 KHz</ul> | Add notes here |
+| Microphone | Adafruit AGC Electret Microphone Amplifier - MAX9814 [^2] | The working principle of an electret condenser microphone is that the diaphragm acts as one plate of a capacitor. Vibrations produce changes in the distance between the diaphragm and the back plate. ... This change in voltage is amplified by the FET and the audio signal appears at the output, after a dc-blocking capacitor. [^3] | <ul><li>Supply Voltage: 2.7v-5.5v @ 3mA current</li><li>Output: 2Vpp on 1.25V bias</li></li><li>Frequency Response: 20Hz - 20 KHz</ul> | Add notes here |
 | Accelerometer | Add description here | Add the phyisical principle of the sensor here | Add specs here | Add notes here |
 | Temperature and Humidity | Add description here | Add the phyisical principle of the sensor here | Add specs here | Add notes here |
 
@@ -136,7 +136,7 @@ From Figure 5, we can also make deductions about the level of noise on each mode
 ![SMA db record!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/SMA_20%20SoundRecords.png)
 
 ### Vibrations Results
-Figure 6 (below) shows raw data results for the amplitude of accelerations during the trip for each mode of transportation. Figure 7 shows the acceleration for each mode of transportation during the trip on the frequency domain. As can be clearly seen, the scooter has by far the most vibrations. The ride is much 'bumpier' than for the bus or car, with amplitudes frequently eclipsing 1g. There is no discernable difference in vibrations on the car or the bus: both are relatively low with a few spikes where acceleration peaks. **WRITE SOMETHING ABOUT FREQUENCY DOMAIN GRAPH**
+Figure 6 (below) shows raw data results for the amplitude of accelerations during the trip for each mode of transportation. Figure 7 shows the acceleration for each mode of transportation during the trip on the frequency domain. As can be clearly seen, the scooter has by far the most vibrations. The ride is much 'bumpier' than for the bus or car, with amplitudes frequently eclipsing 1g. Particularly interesting is the lapse in vibrations on the scooter at around 100 seconds. This period of low vibrations reflects a red light, when the scooter was stopped for a short period of time. There is no discernable difference in vibrations on the car or the bus: both are relatively low with a few spikes where acceleration peaks. **WRITE SOMETHING ABOUT FREQUENCY DOMAIN GRAPH**
 
 *Figure 6: Acceleration for each mode of transportation during a ride from S Negley Ave to Morewood Ave on Fifth Ave*
 ![Acceleration record!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/Acceleration%20Records.png)
@@ -156,7 +156,9 @@ Figure 9 (below) shows the temperature on each mode of transportation during the
 ![Temperature Record!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/Temperature%20Records.png)
 
 ## Discussion
-Discuss the insights from the project
+Overall, the project succeeded and the obtained data provided a clear picture on the levels of comfort for each ride. This would be especially insightful if we could repeat the test throughout the year (varying outdoor weather conditions) and at various times of day (varying bus crowdedness and street traffic). However, from simply testing on one day we can still make valuable deductions. The scooter was clearly the noisiest and bumpiest ride. The humidity for the scooter was also uncomfortably high. While the temperature was comfortable, this was not only at the bottom of the human comfort range but also only comfortable because the weather happened to be comfortable on that day. All in all, while a scooter might be a low-cost or convenient mode of transportation, it is by far the least comfortable.
+
+Comparing between the car and the bus is more difficult. Both performed well and proved to be comfortable modes of transportation. The temperature and humidity were nearly identical for the car and the bus, and both fell within the human comfort levels. Vibrations from both rides were also comparable and low, each with minimal vibrations and occasional spikes
 
 compare modes of transport and make conclusion
 maybe lets mention how it was saturday to the bus was empty and perhaps quieter than usual
@@ -166,5 +168,7 @@ maybe lets mention how it was saturday to the bus was empty and perhaps quieter 
 
 -------------------------------------------------------------------
 ## References and Footnotes
-[^1]: https://www.cuidevices.com/product-spotlight/electret-condenser-microphones
-[^2]: https://learn.adafruit.com/adafruit-agc-electret-microphone-amplifier-max9814/
+[^1]: https://www.maplesoft.com/products/maple/app_gallery/pdf/Condition_Air_into_the_Human_Comfort_Zone.pdf
+[^2]: https://www.cuidevices.com/product-spotlight/electret-condenser-microphones
+[^3]: https://learn.adafruit.com/adafruit-agc-electret-microphone-amplifier-max9814/
+
