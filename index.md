@@ -136,22 +136,20 @@ From Figure 5, we can also make deductions about the level of noise on each mode
 ![SMA db record!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/SMA_20%20SoundRecords.png)
 
 ### Vibrations Results
-Figure 6 (below) shows raw data results for the amplitude of accelerations during the trip for each mode of transportation. Figure 7 shows the acceleration for each mode of transportation during the trip on the frequency domain. As can be clearly seen, the scooter has by far the most vibrations. The ride is much 'bumpier' than for the bus or car, with amplitudes frequently eclipsing 1g.
+Figure 6 (below) shows raw data results for the amplitude of accelerations during the trip for each mode of transportation. Figure 7 shows the acceleration for each mode of transportation during the trip on the frequency domain. As can be clearly seen, the scooter has by far the most vibrations. The ride is much 'bumpier' than for the bus or car, with amplitudes frequently eclipsing 1g. There is no discernable difference in vibrations on the car or the bus: both are relatively low with a few spikes where acceleration peaks. **WRITE SOMETHING ABOUT FREQUENCY DOMAIN GRAPH**
 
-
-*Figure 6: Amplitude of acceleration for each mode of transportation during a ride from S Negley Ave to Morewood Ave on Fifth Ave*
-![Acceleration Fourier!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/Frequency%20Content.png)
-
-*Figure 7: Acceleration on the frequency domain for each mode of transportation during a ride from S Negley Ave to Morewood Ave on Fifth Ave*
+*Figure 6: Acceleration for each mode of transportation during a ride from S Negley Ave to Morewood Ave on Fifth Ave*
 ![Acceleration record!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/Acceleration%20Records.png)
 
-
-
+*Figure 7: Amplitude of acceleration on the frequency domain for each mode of transportation*
+![Acceleration Fourier!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/Frequency%20Content.png)
 
 ### Temperature and Humidity Results
 
-
+*Figure 8: Humidity for each mode of transportation during a ride from S Negley Ave to Morewood Ave on Fifth Ave*
 ![Humidity Record!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/Humidity%20Records.png)
+
+*Figure 9: Temperature for each mode of transportation during a ride from S Negley Ave to Morewood Ave on Fifth Ave*
 ![Temperature Record!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/Temperature%20Records.png)
 
 ## Discussion
