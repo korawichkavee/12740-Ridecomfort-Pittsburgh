@@ -134,6 +134,8 @@ We measured the comfort of each type of ride for a stretch of road from the corn
 ### Temperature and Humidity Results
 
 
+![Humidity Record!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/Humidity%20Records.png)
+![Temperature Record!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/Temperature%20Records.png)
 
 ## Discussion
 Discuss the insights from the project
