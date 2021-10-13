@@ -136,13 +136,17 @@ From Figure 5, we can also make deductions about the level of noise on each mode
 ![SMA db record!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/SMA_20%20SoundRecords.png)
 
 ### Vibrations Results
+Figure 6 (below) shows raw data results for the amplitude of accelerations during the trip for each mode of transportation. Figure 7 shows the acceleration for each mode of transportation during the trip on the frequency domain. As can be clearly seen, the scooter has by far the most vibrations. The ride is much 'bumpier' than for the bus or car, with amplitudes frequently eclipsing 1g.
 
 
 *Figure 6: Amplitude of acceleration for each mode of transportation during a ride from S Negley Ave to Morewood Ave on Fifth Ave*
 ![Acceleration Fourier!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/Frequency%20Content.png)
 
-*Figure 7: Moving window average of the vibrations while riding each mode of transportation*
+*Figure 7: Acceleration on the frequency domain for each mode of transportation during a ride from S Negley Ave to Morewood Ave on Fifth Ave*
 ![Acceleration record!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/Acceleration%20Records.png)
+
+
+
 
 ### Temperature and Humidity Results
 
