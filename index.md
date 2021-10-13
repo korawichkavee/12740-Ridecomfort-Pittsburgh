@@ -145,9 +145,12 @@ Figure 6 (below) shows raw data results for the amplitude of accelerations durin
 ![Acceleration Fourier!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/Frequency%20Content%202.png)
 
 ### Temperature and Humidity Results
+In Figure 8, the humidity for each mode of transportation during the ride is shown. Note that this experiment was carried out shortly after a brief rain, so the outdoor humidity was high. In Figure 8, the scooter reflects this high outdoor humidity. The relative humidity of over 70% is likely precisely the outdoor humidity, which confirms the notion that the comfort of the scooter depends largely on the weather. In this case, high humidity makes the scooter ride less comfortable. By contrast, the car and bus rides had substantially lower relative humidity values–around 41%. This is a much more comfortable relative humidity.
 
 *Figure 8: Humidity for each mode of transportation during a ride from S Negley Ave to Morewood Ave on Fifth Ave*
 ![Humidity Record!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/Humidity%20Records.png)
+
+Figure 9 (below) shows the temperature on each mode of transportation during the ride. The car and bus had comparable values of 24 C and 25 C, respectively. The scooter was slightly cooler, for an average value of 21 C. Similar to the relative humidity, this temperature value for the scooter matches the weather at the time. As the temperature was in a comfortable range, the temperature while riding the scooter was also comfortable. However, on a hot or cold day, this value would  change to reflect this. On the other hand, the bus and car were both slightly warmer than the outdoor temperature. This is not surprising for a partly sunny day, as the sun heats up the car and bus a bit above the outdoor temperature.
 
 *Figure 9: Temperature for each mode of transportation during a ride from S Negley Ave to Morewood Ave on Fifth Ave*
 ![Temperature Record!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/Temperature%20Records.png)
