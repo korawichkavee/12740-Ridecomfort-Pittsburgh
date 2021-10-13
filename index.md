@@ -142,7 +142,7 @@ Figure 6 (below) shows raw data results for the amplitude of accelerations durin
 ![Acceleration record!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/Acceleration%20Records.png)
 
 *Figure 7: Amplitude of acceleration on the frequency domain for each mode of transportation*
-![Acceleration Fourier!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/Frequency%20Content.png)
+![Acceleration Fourier!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/Frequency%20Content%202.png)
 
 ### Temperature and Humidity Results
 
