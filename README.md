@@ -8,6 +8,7 @@ https://korawichkavee.github.io/12740-Ridecomfort-Pittsburgh/ (Figures might not
 
 OR
 https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/index.md
+(Figures are shown)
 
 *THIS IS NOT THE GH-PAGE*
 
