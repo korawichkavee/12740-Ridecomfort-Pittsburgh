@@ -137,7 +137,11 @@ From Figure 5, we can also make deductions about the level of noise on each mode
 
 ### Vibrations Results
 
+
+*Figure 6: Amplitude of acceleration for each mode of transportation during a ride from S Negley Ave to Morewood Ave on Fifth Ave*
 ![Acceleration Fourier!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/Frequency%20Content.png)
+
+*Figure 7: Moving window average of the vibrations while riding each mode of transportation*
 ![Acceleration record!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/Acceleration%20Records.png)
 
 ### Temperature and Humidity Results
