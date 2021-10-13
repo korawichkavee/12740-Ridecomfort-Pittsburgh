@@ -35,19 +35,14 @@ The following sensors were chosen to measure data, and get an assessment of comf
 One of the main aspects that one can attribute to comfort is a smooth ride. That is why adding a vibration sensor to measure accelerations differences during the traveling time would be able to determine if the ride was pleasant. The accelerometer sensor we decided to use is **ADXL335 - 5V ready triple axis accelerometer**. (Figure 1).
 
 ### Noise and Sound 
-Who has not had the annoying situation of having to hear a car blasting off music while going to a place. Noises, especially loud and sharp, irritate someone very easily. Hence, detecting the noise while travelling can also quantify comfort. The microphone sensor (Electret Microphone Amplifier MAX9814) is shown in Figure 1 below. 
+Who has not had the annoying situation of having to hear a car blasting off music while going to a place. Noises, especially loud and sharp, irritate someone very easily. Hence, detecting the noise while travelling can also quantify comfort. The microphone sensor (**Electret Microphone Amplifier MAX9814**) is shown in Figure 1 below. 
 
 ### Temperature and humidity 
 Temperature and humidity can affect how a human feels during a ride. For instance, a warm and humid sensation would make someone start to sweat more easily and make a ride unpleasant. Thus, using **DHT11 Temperature and Humidity Sensor** to measure temperature and humidity would give us an outcome that one can measure if the temperature and humidity is inside the human comfort location (See Figure 1 below).
 
-### Sensor Images
-*Figure 1: The microphone (left) and accelerometer (right)*
+*Figure 1: Sensors used to obtain data to determine comfort in different modes of transportation. From left to right, ADXL335 sensor, MAX9814 sensor, and DHT11 sensor.*[^1]
 
 ![3 sensors used!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/3sensors.jpg)
-
-*Figure 2: The temperature and humidity sensor*
-
-![The temperature and humidity sensor!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/Screen%20Shot%202021-10-12%20at%2012.13.28%20PM.png)
 
 **In order to take relevant measurements, the sensors were fixed to each vehicle while in motion, near the human position (where someone normally sits/stands on) to take samples during the trip and assess the differences between types of transportation.**
 
