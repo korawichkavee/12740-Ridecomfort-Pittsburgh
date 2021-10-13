@@ -156,15 +156,15 @@ Figure 9 (below) shows the temperature on each mode of transportation during the
 ![Temperature Record!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/Temperature%20Records.png)
 
 ## Discussion
-Overall, the project succeeded and the obtained data provided a clear picture on the levels of comfort for each ride. This would be especially insightful if we could repeat the test throughout the year (varying outdoor weather conditions) and at various times of day (varying bus crowdedness and street traffic). However, from simply testing on one day we can still make valuable deductions. The scooter was clearly the noisiest and bumpiest ride. The humidity for the scooter was also uncomfortably high. While the temperature was comfortable, this was not only at the bottom of the human comfort range but also only comfortable because the weather happened to be comfortable on that day. All in all, while a scooter might be a low-cost or convenient mode of transportation, it is by far the least comfortable.
+Overall, the project succeeded and the obtained data provided a clear picture on the levels of comfort for each ride. This would be especially insightful if we could repeat the test throughout the year (varying outdoor weather conditions) and at various times of day (varying bus crowdedness and street traffic). However, from simply testing on one day we can still make valuable deductions. The scooter was clearly the noisiest and bumpiest ride. The noise levels reaching over 120 dB across a moving window average of 20 seconds shows prolonged periods of substantial discomfort due to the volume of sound. The humidity for the scooter was also uncomfortably high. While the temperature was comfortable, this was not only at the bottom of the human comfort range but also only comfortable because the weather happened to be comfortable on that day. All in all, while a scooter might be a low-cost or convenient mode of transportation, it is by far the least comfortable.
 
-Comparing between the car and the bus is more difficult. Both performed well and proved to be comfortable modes of transportation. The temperature and humidity were nearly identical for the car and the bus, and both fell within the human comfort levels. Vibrations from both rides were also comparable and low, each with minimal vibrations and occasional spikes. For the volume of sound, the car was quieter than the bus.
+Comparing between the car and the bus is more difficult. Both performed well and proved to be comfortable modes of transportation. The temperature and humidity were nearly identical for the car and the bus, and both fell within the human comfort levels. Vibrations from both rides were also comparable and low, each with minimal vibrations and occasional spikes. For the volume of sound, the car was quieter than the bus. The ambient noise of the car around 60 dB is roughly equivalent to normal speech, while the bus was only slightly louder at 80 dB. For this reason, the car was slightly more comfortable than the bus. Based on our results, the following lists the comfort of each mode of transportation in order from most comfortable to least:
 
-compare modes of transport and make conclusion
-maybe lets mention how it was saturday to the bus was empty and perhaps quieter than usual
+1. Car
+2. Bus
+3. Scooter
 
-
-
+While our conclusions are intuitive, with more testing we would expect a larger difference in the comfort of the bus and the car to appear. In general, cars are better equipped to control temperature, especially during the summer as the Pittsburgh city busses do not have air conditioning. Furthermore, testing was carried out on a Saturday when the bus was relatively quiet and empty. If we tested during a ride home from school during the week, we might expect the bus to be louder. That said, the vibrations showed no discernable difference between the car and the bus, and that would not be likely to change very much even in different temperature or during a busier time of day.
 
 -------------------------------------------------------------------
 ## References and Footnotes
