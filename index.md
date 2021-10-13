@@ -137,18 +137,18 @@ Figure 4 (below) displays the raw data results for the noise during the trips fo
 
 First and foremost, the length of each graph shows how long each of the rides took. The result is not at all surprising: the car was the fastest, taking about 120 seconds, while the bus was only marginally slower, taking about 135 seconds. The scooter, however, took much longer to reach the destination: over 260 seconds. While this observation has little to do with the sensor itself, this is the reason the plots all vary in length and it is important to keep in mind.
 
-From Figure 5, we can also make deductions about the level of noise on each mode of transportation. The car is evidently the quietest, hovering around 60 dB during the ride. The bus was noticeably louder than the car, with most values just below the 80 dB range. Finally, the noise from the scooter was by far the most inconsistent. This is likely due to the fact that the noise from the scooter comes almost exclusively from the surrounding environment, not anything heppning 'inside' the vehicle. Thus, it depends largely on the traffic around it. At times, the moving window average reached over 120 dB and below 40 dB. During the full ride, however, the scooter was overall the loudest mode of transportation with an average of **THISAVERAGENUMBER** dB.
+From Figure 5, we can also make deductions about the level of noise on each mode of transportation. The car is evidently the quietest, hovering around 60 dB during the ride. The bus was noticeably louder than the car, with most values just below the 80 dB range. Finally, the noise from the scooter was by far the most inconsistent. This is likely due to the fact that the noise from the scooter comes almost exclusively from the surrounding environment, not anything heppning 'inside' the vehicle. Thus, it depends largely on the traffic around it. At times, the moving window average reached over 120 dB and below 40 dB. During the full ride, however, the scooter was overall the loudest mode of transportation with an average of 82.92 dB.
 
 *Figure 4: Volume of sounds for each mode of transportation during a ride from S Negley Ave to Morewood Ave on Fifth Ave*
 ![db record!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/Sound%20Records.png)
 
-*Figure 5: Moving window average of the volume of sounds while riding each mode of transportation*
+*Figure 5: Moving window average of the volume of sounds while riding each mode of transportation (dashed lines indicates the mean values)*
 ![SMA db record!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/SMA_20%20SoundRecords.png)
 
 ### Vibrations Results
 Figure 6 (below) shows raw data results for the amplitude of accelerations during the trip for each mode of transportation. Figure 7 shows the acceleration for each mode of transportation during the trip on the frequency domain. As can be clearly seen, the scooter has by far the most vibrations. The ride is much 'bumpier' than for the bus or car, with amplitudes frequently eclipsing 1g. Particularly interesting is the lapse in vibrations on the scooter at around 100 seconds. This period of low vibrations reflects a red light, when the scooter was stopped for a short period of time. There is no discernable difference in vibrations on the car or the bus: both are relatively low with a few spikes where acceleration peaks.
 
-*Figure 6: Acceleration for each mode of transportation during a ride from S Negley Ave to Morewood Ave on Fifth Ave*
+*Figure 6: Acceleration for each mode of transportation during a ride from S Negley Ave to Morewood Ave on Fifth Ave (dashed lines indicates root-mean-square deviation from 0 [g])*
 ![Acceleration record!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/Acceleration%20Records.png)
 From the frequency domain graph, it can be seen that in all transportation methods, there are not any clearly predominant frequency content from others, it seems like if they were almost uniformly distributed. This may probably be because of the low sampling of the sensor equipment, compared with the actual frequencies of vibration and there might be a considerable amount of aliasing in this data. So, the only reliable information that can be obtained is that the acceleration amplitudes of the scooter ride are much larger than the car and the bus.
 
@@ -158,12 +158,12 @@ From the frequency domain graph, it can be seen that in all transportation metho
 ### Temperature and Humidity Results
 In Figure 8, the humidity for each mode of transportation during the ride is shown. Note that this experiment was carried out shortly after a brief rain, so the outdoor humidity was high. In Figure 8, the scooter reflects this high outdoor humidity. The relative humidity of over 70% is likely precisely the outdoor humidity, which confirms the notion that the comfort of the scooter depends largely on the weather. In this case, high humidity makes the scooter ride less comfortable. By contrast, the car and bus rides had substantially lower relative humidity values–around 41%. This is a much more comfortable relative humidity.
 
-*Figure 8: Humidity for each mode of transportation during a ride from S Negley Ave to Morewood Ave on Fifth Ave*
+*Figure 8: Humidity for each mode of transportation during a ride from S Negley Ave to Morewood Ave on Fifth Ave (dashed lines indicates the mean values)*
 ![Humidity Record!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/Humidity%20Records.png)
 
 Figure 9 (below) shows the temperature on each mode of transportation during the ride. The car and bus had comparable values of 24 C and 25 C, respectively. The scooter was slightly cooler, for an average value of 21 C. Similar to the relative humidity, this temperature value for the scooter matches the weather at the time. As the temperature was in a comfortable range, the temperature while riding the scooter was also comfortable. However, on a hot or cold day, this value would  change to reflect this. On the other hand, the bus and car were both slightly warmer than the outdoor temperature. This is not surprising for a partly sunny day, as the sun heats up the car and bus a bit above the outdoor temperature.
 
-*Figure 9: Temperature for each mode of transportation during a ride from S Negley Ave to Morewood Ave on Fifth Ave*
+*Figure 9: Temperature for each mode of transportation during a ride from S Negley Ave to Morewood Ave on Fifth Ave (dashed lines indicates the mean values)*
 ![Temperature Record!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/Temperature%20Records.png)
 
 ## Discussion
