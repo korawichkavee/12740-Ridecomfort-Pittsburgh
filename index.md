@@ -83,31 +83,38 @@ We went out and successfully obtained data from each mode of transportation toda
 ### Phenomena of Interest
 As mentioned above, the interest of this project is to quantify and compare the comfort of various modes of transportation. We identified a few contributing factors to comfort, which include noise level, vibrations, temperature, and humidity. Ultimately, these are the phenomena we are sensing.
 
+#### Temperature and Humidity
 The temperature and humidity are both relatively static signals. Especially considering the short time scale of our study (~2 to 5 minutes), these signals are unlikely to change. If they do, they are unlikely to change by very much. Thus, a low sampling frequency can adequately capture and characterize these signals. Sampling one point might be sufficient to understand the temperature and humidity in each mode of transportation, although it is still better to obtain multiple samples throughout the ride. Theoretically, depending on the weather conditions, the temperature in a car could change with heating or air conditioning over the 2-5 minute time period of our test. It is crucial to keep in mind that the optimal human comfort zone is between 22°C to 27°C and 40-60% relative humidity during this analysis. [^4]
 
 *Figure 2: Human comfort requires the right combination of temperature and humidity. The comfort zone diagram gives an estimated insight about the ranges where the human feel the most comfortable.* [^5]
 
 ![Human comfort requires the right combination of temperature and humidity!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/comfort%20zone.png)
 
+#### Vibrations and Movement
 Sensing vibrations is much more challenging. This is a dynamic, aperiod signal. The accelerometer can measure movement, shock, or shake in the X, Y, and Z-axis. Sensors of this type measure capacitance changes based on the deflection between fixed plates and plates attached to a dangled structure. As acceleration is detected in each axis, the difference in capacitance is converted to an output voltage proportional to it. [^6] While we expect the signal to be 'centered' around 1g, sporadic motion from the vehicles causes it to vary at random intervals. These variations tend to be a function of external sources, such as potholes and road conditions, stops and traffic lights, other cars, driving habits, etc. Thus, we cannot expect a consistent, periodic signal. Instead, we sample the signal at a rate high enough to capture these sudden variations in acceleration and use this to quantify the vibrations during the ride.
 
 *Figure 3: An accelerometer is used where linear motion such as shock, vibration, and movement is needed. Diagram shows the structure of measuring movement, shock, or shake within an axis.* [^5]
 
 ![Diagram of Principle of Accelerometer!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/Principle%20of%20accelerometer.jpg)
 
-Sound sensing poses and entirely new set of challenges. Sound signals are dynamic, periodic signals that cover a very large range of frequencies (up to and above 1kHz). Due to limitations of the sensors and equipment, sampling rate is severely limited to the point where effectively all sound signals are aliased. Thus, trying to determine the sound wave frequencies is futile. Instead, we focus our efforts on measuring volume: magnitude of the sound waves. This magnitude is converted into decibels to easily compare to human comfort levels. For this analysis, it is important to note that normal speech is around 60 dB and any sound above 120 dB is perceived as discomfort. [^2]
+#### Sound and Noises
+Sound sensing poses and entirely new set of challenges. Sound signals are dynamic, periodic signals that cover a very large range of frequencies (up to and above 1kHz). Due to limitations of the sensors and equipment, sampling rate is severely limited to the point where effectively all sound signals are aliased. Thus, trying to determine the sound wave frequencies is futile. Instead, we focus our efforts on measuring volume: magnitude of the sound waves. This magnitude is converted into decibels to easily compare to human comfort levels. For this analysis, it is important to note that normal speech is around 60 dB and any sound above 120 dB is perceived as discomfort. [^7]
 
-### Sensors Used - In Depth
-An outline of the sensor descriptions and specifications is show in Table 1. The final setup of the sensor with the RaspberryPi is shown in Figure 3 below.
+*Figure 4: Defining the maximum frequency-intensity range that can be audible to the human ear. Denoting human speech and music range for comparison.* [^8]
+
+![Diagram of Sound!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/sound.jpg)
+
+### Sensors - In Depth
+An outline of the sensor descriptions and specifications is show in Table 1. The final setup of the sensor with the RaspberryPi is shown in Figure 5 below.
 
 *Table 1: Sensor descriptions and specifications*
-| Sensor | Description | Physical Principle | Characteristics | Additional Notes |
-| ----------- | ----------- | ----------- | ----------- | ----------- |
-| Microphone | Adafruit AGC Electret Microphone Amplifier - MAX9814 [^3] | The working principle of an electret condenser microphone is that the diaphragm acts as one plate of a capacitor. Vibrations produce changes in the distance between the diaphragm and the back plate. ... This change in voltage is amplified by the FET and the audio signal appears at the output, after a dc-blocking capacitor. [^4] | <ul><li>Supply Voltage: 2.7v-5.5v @ 3mA current</li><li>Output: 2Vpp on 1.25V bias</li></li><li>Frequency Response: 20Hz - 20 KHz</ul> | Add notes here |
-| Accelerometer | Add description here | Add the phyisical principle of the sensor here | Add specs here | Add notes here |
-| Temperature and Humidity | Add description here | Add the phyisical principle of the sensor here | Add specs here | Add notes here |
+| Sensor | Description | Physical Principle | Characteristics |
+| ----------- | ----------- | ----------- | ----------- |
+| Sound and Noise Sensor | Electret Microphone Amplifier - MAX9814 | Electret condenser microphones function by utilizing a diaphragm as a capacitor plate. Vibrations by the diaphragm generated by sound produce changes the distance between the diaphragm and the second plate. Thus, causing a difference in voltage, which is amplified and converted to reflect audio signal at the output. [^9], [^10] | <ul><li>Supply Voltage: 2.7v-5.5v @ 3mA current</li><li>Output: 2Vpp on 1.25V bias</li><li>Frequency Response: 20Hz - 20 KHz</li><li> Temperature Range: −55°C to +125°C</li></ul> [^9] |
+| Accelerometer Sensor | ADXL335 - 5V ready triple axis accelerometer | This accelerometer measures capacitance changes based on the deflection of fixed plates and plates attached to a suspended structure. A proportional output voltage is generated for each axis when acceleration is detected.[^6] | <ul><li>Supply Voltage: 1.8v-3.6v @ 350 μA current</li><li>Output: 0.1V-2.8V with ±0.01 %/°C sensitivity change</li><li>Frequency Response: 0.5Hz-1600Hz (X, Y-axes), 0.5Hz-550Hz (Z-axis)</li><li> Temperature Range: −55°C to +125°C</li></ul>[^11] |
+| Temperature and Humidity | Add description here | Add the phyisical principle of the sensor here | Add specs here |
 
-*Figure 3: The final sensor setup with the RaspberryPi*
+*Figure 5. The final sensor setup with the RaspberryPi*
 
 ![Final sensor and RaspberryPi setup!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/WhatsApp%20Image%202021-10-08%20at%203.13.27%20PM.jpeg)
 
@@ -125,15 +132,8 @@ When running the code, the RaspberryPi takes the values from each sensor and wri
 ## Experiment and Results
 We measured the comfort of each type of ride for a stretch of road from the corner of S Negley Ave and Fifth Ave to the corner of Morewood Ave and Fifth Ave. This is a common route for students from Shadyside to travel to school. To carry out our tests, we securely fastened the RaspberryPi and breadboard with sensors in an open box. For each mode of tranportation, we placed and firmly held or taped the box in place on the ground between the feet of where we would sit or stand. We started and ended sampling at the same location for each mode of transportation, so the amount of time varied for slower modes of transportation (the scooter especially). In each case, we did not talk or make noise during testing so that any sound levels were from the surrounding environment.
 
-### Definition of Comfort Zone
-In order to determine how comfortable each variable is, it is important to define what are going to be the comfort level for each variable and then define from the measurments which transportation methods deviates more from this defined level of comfortness.
-
-For acceleration and noise level, it is very intuitive to determine that no acceleration and no noise are the most comfortable zones to be, then the larger the acceleration or the noise, the more umpleasent the jurney will be, but for temperature and humidity is different. For these parameters we will adopt the definition of comfort zone defined by ISO7730 which provides the following relationship between temperature and humidity. 
-![temp_hum comfort!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/ISO7730.jpg)
-Based on this information, we defined the temperature and humidity comfort zones as equal to 23.5°C and 50% of humidity.
-
 ### Noise Results
-Figure 4 (below) displays the raw data results for the noise during the trips for each mode of transportation. While the low sampling rate causes the signal to be very erratic and difficult to draw conclusions to, the following Figure 5 shows a 20 second window moving average of the raw data using 136 points. In Figure 5, a few trends can be easily observed.
+Figure 4 (below) displays the raw data results for the noise during the trips for each mode of transportation. While the low sampling rate causes the signal to be very erratic and difficult to draw conclusions to, the following Figure 5 shows a moving window average of the raw data using 136 points (20 seconds). In Figure 5, a few trends can be easily observed.
 
 First and foremost, the length of each graph shows how long each of the rides took. The result is not at all surprising: the car was the fastest, taking about 120 seconds, while the bus was only marginally slower, taking about 135 seconds. The scooter, however, took much longer to reach the destination: over 260 seconds. While this observation has little to do with the sensor itself, this is the reason the plots all vary in length and it is important to keep in mind.
 
@@ -184,7 +184,9 @@ While our conclusions are intuitive, with more testing we would expect a larger 
 [^4]: Maplesoft. (n.d.). Conditioning Air into the Human Comfort Zone. Maplesoft. https://www.maplesoft.com/products/maple/app_gallery/pdf/Condition_Air_into_the_Human_Comfort_Zone.pdf
 [^5]: Datta, A. K. (2017). Equilibrium, Energy Conservation and Temperature. In Heat and mass transfer: A biological context (2nd ed., pp. 11–14). essay, CRC press. 
 [^6]: Earl, B. (2012, November 5). Adafruit analog accelerometer breakouts. Adafruit Learning System. Retrieved October 10, 2021, from https://learn.adafruit.com/adafruit-analog-accelerometer-breakouts. 
-[^2]: https://www.noisequest.psu.edu/noisebasics-basics.html
-[^3]: https://www.cuidevices.com/product-spotlight/electret-condenser-microphones
-[^4]: https://learn.adafruit.com/adafruit-agc-electret-microphone-amplifier-max9814/
+[^7]: Noisequest. (2018). Noise Basics. PSU Noisequest. Retrieved October 11, 2021, from https://www.noisequest.psu.edu/noisebasics-basics.html. 
+[^8]: Vaisberg, J., Folkeard, P., Parsa, V., et al. (2017, August 17). Comparison of music sound quality between hearing aids and music programs. AudiologyOnline. Retrieved October 12, 2021, from https://www.audiologyonline.com/articles/comparison-music-sound-quality-between-20872. 
+[^9]: Ada, L. (2014, February 13). Adafruit AGC Electret microphone amplifier - MAX9814. Adafruit Learning System. Retrieved October 13, 2021, from https://learn.adafruit.com/adafruit-agc-electret-microphone-amplifier-max9814/. 
+[^10]: CUI Devices. (2021). Product spotlight: Electret condenser microphones. CUI Devices. Retrieved October 13, 2021, from https://www.cuidevices.com/product-spotlight/electret-condenser-microphones. 
+[^11]: ADXL335. Datasheet and Product Info | Analog Devices. (2010). Retrieved October 13, 2021, from https://www.analog.com/en/products/adxl335.html#product-overview. 
 
