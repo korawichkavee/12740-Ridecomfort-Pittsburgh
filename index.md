@@ -2,13 +2,13 @@
 
 **Members: Korawich Kavee, Jacobo Kirsch Tornell, Guillermo Montero, and Albin Wells**
 
-## TO DO: (1) Finish sensor spec sheet (with citations), (2) add graphs and discussion on results, (3) add final conclusions, (4) read over full report and review writing and formatting
+#### TO DO: (1) Finish sensor spec sheet (with citations), (2) add graphs and discussion on results, (3) add final conclusions, (4) read over full report and review writing and formatting
 
-To delete later: [Canvas project rubric link](https://canvas.cmu.edu/courses/25498/discussion_topics/362646)
-
-Video Link: [Ride Comfort Video](https://www.youtube.com/watch?v=bcNrlpfi9SA&ab_channel=KorawichKavee)
+**To delete later: [Canvas project rubric link](https://canvas.cmu.edu/courses/25498/discussion_topics/362646)
 
 Website Link: [Github Project](https://korawichkavee.github.io/12740-Ridecomfort-Pittsburgh/)
+
+Video Link: [Ride Comfort Video](https://www.youtube.com/watch?v=bcNrlpfi9SA&ab_channel=KorawichKavee)
 
 Source Code: [Ride Comfort Code](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/tree/main/python%20code%20program)
 
@@ -40,9 +40,9 @@ Who has not had the annoying situation of having to hear a car blasting off musi
 ### Temperature and humidity 
 Temperature and humidity can affect how a human feels during a ride. For instance, a warm and humid sensation would make someone start to sweat more easily and make a ride unpleasant. Thus, using **DHT11 Temperature and Humidity Sensor** to measure temperature and humidity would give us an outcome that one can measure if the temperature and humidity is inside the human comfort location (See Figure 1 below).
 
-*Figure 1: Sensors used to obtain data to determine comfort in different modes of transportation. From left to right, ADXL335 sensor, MAX9814 sensor, and DHT11 sensor.*[^1]
+*Figure 1: Sensors used to obtain data to determine comfort in different modes of transportation. From left to right, ADXL335 sensor, MAX9814 sensor, and DHT11 sensor.*[^1][^2][^3]
 
-![3 sensors used!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/3sensors.jpg)
+![3 sensors used. From left to right, ADXL335 sensor, MAX9814 sensor, and DHT11 sensor!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/3sensors.jpg)
 
 **In order to take relevant measurements, the sensors were fixed to each vehicle while in motion, near the human position (where someone normally sits/stands on) to take samples during the trip and assess the differences between types of transportation.**
 
@@ -81,11 +81,19 @@ We went out and successfully obtained data from each mode of transportation toda
 ## Methods
 
 ### Phenomena of Interest
-As mentioned above, we are interested in quantifying and comparing the comfort of various modes of transportation. We identified a few contributing factors to comfort, which include noise level, vibrations, temperature, and humidity. Ultimately, these are the phenomena we are sensing.
+As mentioned above, the interest of this project is to quantify and compare the comfort of various modes of transportation. We identified a few contributing factors to comfort, which include noise level, vibrations, temperature, and humidity. Ultimately, these are the phenomena we are sensing.
 
-The temperature and humidity are both relatively static signals. Especially considering the short time scale of our study (~2 to 5 minutes) these signals are unlikely to change, and, if they do, they are unlikely to change by very much. Thus, a very low sampling frequency can adequetely capture and characterize these signals. In fact, sampling one point might be sufficient to understand the temperature and humidity in each mode of transportation, although it is still better to obtain multiple samples throoughout the ride. Theoretically, depending on the weather conditions, the temperature in a car could change with heating or air conditioning over the 2-5 minute time period of our test. During this analysis, it is important to keep in mind the optimal human comfort zome between 22 C to 27 C and 40-60% relative humidity. [^1]
+The temperature and humidity are both relatively static signals. Especially considering the short time scale of our study (~2 to 5 minutes), these signals are unlikely to change. If they do, they are unlikely to change by very much. Thus, a low sampling frequency can adequately capture and characterize these signals. Sampling one point might be sufficient to understand the temperature and humidity in each mode of transportation, although it is still better to obtain multiple samples throughout the ride. Theoretically, depending on the weather conditions, the temperature in a car could change with heating or air conditioning over the 2-5 minute time period of our test. It is crucial to keep in mind that the optimal human comfort zone is between 22°C to 27°C and 40-60% relative humidity during this analysis. [^4]
 
-Sensing vibrations is much more challenging. This is a dynamic, aperiod signal. While we expect the signal to be 'centered' around 1g, sporadic motion from the vehicles causes it to vary at random intervals. These variations tend to be a function of external sources, such as potholes and road conditions, stops and traffic lights, other cars, driving habits, etc. Thus, we cannot expect a consistent, periodic signal. Instead, we sample the signal at a rate high enough to capture these sudden variations in acceleration and use this to quantify the vibrations during the ride.
+*Figure 2: Human comfort requires the right combination of temperature and humidity. The comfort zone diagram gives an estimated insight about the ranges where the human feel the most comfortable.* [^5]
+
+![Human comfort requires the right combination of temperature and humidity!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/comfort%20zone.png)
+
+Sensing vibrations is much more challenging. This is a dynamic, aperiod signal. The accelerometer can measure movement, shock, or shake in the X, Y, and Z-axis. Sensors of this type measure capacitance changes based on the deflection between fixed plates and plates attached to a dangled structure. As acceleration is detected in each axis, the difference in capacitance is converted to an output voltage proportional to it. [^6] While we expect the signal to be 'centered' around 1g, sporadic motion from the vehicles causes it to vary at random intervals. These variations tend to be a function of external sources, such as potholes and road conditions, stops and traffic lights, other cars, driving habits, etc. Thus, we cannot expect a consistent, periodic signal. Instead, we sample the signal at a rate high enough to capture these sudden variations in acceleration and use this to quantify the vibrations during the ride.
+
+*Figure 3: An accelerometer is used where linear motion such as shock, vibration, and movement is needed. Diagram shows the structure of measuring movement, shock, or shake within an axis.* [^5]
+
+![Diagram of Principle of Accelerometer!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/Principle%20of%20accelerometer.jpg)
 
 Sound sensing poses and entirely new set of challenges. Sound signals are dynamic, periodic signals that cover a very large range of frequencies (up to and above 1kHz). Due to limitations of the sensors and equipment, sampling rate is severely limited to the point where effectively all sound signals are aliased. Thus, trying to determine the sound wave frequencies is futile. Instead, we focus our efforts on measuring volume: magnitude of the sound waves. This magnitude is converted into decibels to easily compare to human comfort levels. For this analysis, it is important to note that normal speech is around 60 dB and any sound above 120 dB is perceived as discomfort. [^2]
 
@@ -163,7 +171,12 @@ While our conclusions are intuitive, with more testing we would expect a larger 
 
 -------------------------------------------------------------------
 ## References and Footnotes
-[^1]: https://www.maplesoft.com/products/maple/app_gallery/pdf/Condition_Air_into_the_Human_Comfort_Zone.pdf
+[^1]: Earl, B. (2021). Sensors ADXL335 Lrg. Adafruit. Adafruit. Retrieved 2021, from https://cdn-learn.adafruit.com/assets/assets/000/002/469/small360/sensors_ADXL335_LRG.jpg?1396783433. 
+[^2]: Adafruit. (2021). MAX9814. Digi-Key Electronics. Adafruit. Retrieved 2021, from https://www.digikey.com/en/products/detail/adafruit-industries-llc/1713/4990777?s=N4IgjCBcoLQBxVAYygMwIYBsDOBTANCAPZQDa4ArAEwIC6AvvYVWeAOxgDMIDQA. 
+[^3]: Roboshop.com. (2020). DHT11 Temperature Humidity Sensor Module. Roboshop.com. Retrieved 2021, from https://www.robotshop.com/media/catalog/product/cache/image/1350x/9df78eab33525d08d6e5fb8d27136e95/d/h/dht11-temperature-humidity-sensor-module.jpg. 
+[^4]: Maplesoft. (n.d.). Conditioning Air into the Human Comfort Zone. Maplesoft. https://www.maplesoft.com/products/maple/app_gallery/pdf/Condition_Air_into_the_Human_Comfort_Zone.pdf
+[^5]: Datta, A. K. (2017). Equilibrium, Energy Conservation and Temperature. In Heat and mass transfer: A biological context (2nd ed., pp. 11–14). essay, CRC press. 
+[^6]: Earl, B. (2012, November 5). Adafruit analog accelerometer breakouts. Adafruit Learning System. Retrieved October 10, 2021, from https://learn.adafruit.com/adafruit-analog-accelerometer-breakouts. 
 [^2]: https://www.noisequest.psu.edu/noisebasics-basics.html
 [^3]: https://www.cuidevices.com/product-spotlight/electret-condenser-microphones
 [^4]: https://learn.adafruit.com/adafruit-agc-electret-microphone-amplifier-max9814/
