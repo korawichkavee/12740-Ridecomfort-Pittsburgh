@@ -171,7 +171,7 @@ Figure 9 (below) shows the temperature on each mode of transportation during the
 
 Overall, the project succeeded and the obtained data provided a clear picture on the levels of comfort for each ride. This would be especially insightful if we could repeat the test throughout the year (varying outdoor weather conditions) and at various times of day (varying bus crowdedness and street traffic). However, from simply testing on one day we can still make valuable deductions. In order to do this, we calculated the root-mean-square deviation from all the collected data with respect to each measurment type and transportation method. This way we can comparatively identify for each measurment category which was the most un comfortable transportation method by identifying the greatest deviation.
 
-*Table 2: Measurments Comfort Zone and root-mean-square deviation*
+*Table 2: Comfort zone parameters definition and root-mean-square deviation of the measurments*
 | Sensor | Comfot Zone | Car | Bus | Scooter |
 | ----------- | ----------- | ----------- | ----------- | ----------- |
 | Acceleration [g] | 0 | 0.05 | 0.05 | 0.77 |
