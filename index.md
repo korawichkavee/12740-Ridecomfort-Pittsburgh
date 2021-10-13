@@ -125,8 +125,15 @@ When running the code, the RaspberryPi takes the values from each sensor and wri
 ## Experiment and Results
 We measured the comfort of each type of ride for a stretch of road from the corner of S Negley Ave and Fifth Ave to the corner of Morewood Ave and Fifth Ave. This is a common route for students from Shadyside to travel to school. To carry out our tests, we securely fastened the RaspberryPi and breadboard with sensors in an open box. For each mode of tranportation, we placed and firmly held or taped the box in place on the ground between the feet of where we would sit or stand. We started and ended sampling at the same location for each mode of transportation, so the amount of time varied for slower modes of transportation (the scooter especially). In each case, we did not talk or make noise during testing so that any sound levels were from the surrounding environment.
 
+### Definition of Comfort Zone
+In order to determine how comfortable each variable is, it is important to define what are going to be the comfort level for each variable and then define from the measurments which transportation methods deviates more from this defined level of comfortness.
+
+For acceleration and noise level, it is very intuitive to determine that no acceleration and no noise are the most comfortable zones to be, then the larger the acceleration or the noise, the more umpleasent the jurney will be, but for temperature and humidity is different. For these parameters we will adopt the definition of comfort zone defined by ISO7730 which provides the following relationship between temperature and humidity. 
+![temp_hum comfort!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/ISO7730.jpg)
+Based on this information, we defined the temperature and humidity comfort zones as equal to 23.5°C and 50% of humidity.
+
 ### Noise Results
-Figure 4 (below) displays the raw data results for the noise during the trips for each mode of transportation. While the low sampling rate causes the signal to be very erratic and difficult to draw conclusions to, the following Figure 5 shows a moving window average of the raw data using 136 points (20 seconds). In Figure 5, a few trends can be easily observed.
+Figure 4 (below) displays the raw data results for the noise during the trips for each mode of transportation. While the low sampling rate causes the signal to be very erratic and difficult to draw conclusions to, the following Figure 5 shows a 20 second window moving average of the raw data using 136 points. In Figure 5, a few trends can be easily observed.
 
 First and foremost, the length of each graph shows how long each of the rides took. The result is not at all surprising: the car was the fastest, taking about 120 seconds, while the bus was only marginally slower, taking about 135 seconds. The scooter, however, took much longer to reach the destination: over 260 seconds. While this observation has little to do with the sensor itself, this is the reason the plots all vary in length and it is important to keep in mind.
 
