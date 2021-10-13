@@ -32,18 +32,18 @@ For each measured aspect and type of transportation, there will be an analysis a
 The following sensors were chosen to measure data, and get an assessment of comfort that can be quantifiable.
 
 ### Vibration and Movement
-One of the main aspects that one can attribute to comfort is a smooth ride. That is why adding a vibration sensor to measure accelerations differences during the traveling time would be able to determine if the ride was pleasant. The accelerometer we used is shown in Figure 1 below.
+One of the main aspects that one can attribute to comfort is a smooth ride. That is why adding a vibration sensor to measure accelerations differences during the traveling time would be able to determine if the ride was pleasant. The accelerometer sensor we decided to use is **ADXL335 - 5V ready triple axis accelerometer**. (Figure 1).
 
 ### Noise and Sound 
-Who has not had the annoying situation of having to hear a car blasting off music while going to a place. Noises, especially loud and sharp, irritate someone very easily. Hence, detecting the noise while travelling can also quantify comfort. The microphone sensor measuring these noises can be seen in Figure 1 below. 
+Who has not had the annoying situation of having to hear a car blasting off music while going to a place. Noises, especially loud and sharp, irritate someone very easily. Hence, detecting the noise while travelling can also quantify comfort. The microphone sensor (Electret Microphone Amplifier MAX9814) is shown in Figure 1 below. 
 
 ### Temperature and humidity 
-Temperature and humidity can affect how a human feels during a ride. For instance, a warm and humid sensation would make someone start to sweat more easily and make a ride unpleasant. Thus, using sensor to measure temperature and humidity would give us an outcome that one can measure if the temperature and humidity is inside the human comfort location (See Figure 2 below).
+Temperature and humidity can affect how a human feels during a ride. For instance, a warm and humid sensation would make someone start to sweat more easily and make a ride unpleasant. Thus, using **DHT11 Temperature and Humidity Sensor** to measure temperature and humidity would give us an outcome that one can measure if the temperature and humidity is inside the human comfort location (See Figure 1 below).
 
 ### Sensor Images
 *Figure 1: The microphone (left) and accelerometer (right)*
 
-![The microphone (left) and accelerometer (right)!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/0577d09c-f731-45a8-9509-2cb6770de479.jpeg)
+![3 sensors used!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/3sensors.jpg)
 
 *Figure 2: The temperature and humidity sensor*
 
