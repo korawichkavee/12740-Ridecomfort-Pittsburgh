@@ -113,7 +113,7 @@ In order to collect, condition, and process signal data, we set up a Python code
 
 We define a samply frequency of 20 Hz, which actually samples at 6.8 Hz due to limitations of the hardware and CPU. While this sampling frequency is not nearly high enough to detect sound freqeuncies and might miss some subtle vibrations, the frequency still captures the general trends of the rides and the magnitudes of sounds and accelerations. Ultimately, this is sufficient for capturing the volume of noise, which is a more critical aspect of assessing comfort from sound. As temperature and humidity are static signals, this sampling rate is appropriate for those signals.
 
-The accelerometer was then calibrated to convert raw data into actual acceleration. This was done using three known points by placing the accelerometer flat facing upwards, sideways, and upside down. The z-axis value of the accelerometer was converted in relation to gravity in each position: g, 0, and -g, respectively. The microphone was similarly calibrated by testing the sensor at a constant sound loudness. A smartphone was used to measure the volume of sound in decibals at various loudnesses, and compared to the raw data. A linear function was used to derive a conversion from the raw data into a decibal output for volume.
+The accelerometer was then calibrated to convert raw data into actual acceleration. This was done using three known points by placing the accelerometer flat facing upwards, sideways, and upside down. The z-axis value of the accelerometer was converted in relation to gravity in each position: g, 0, and -g, respectively. The microphone was similarly calibrated by testing the sensor at a constant sound loudness. A smartphone was used to measure the volume of sound in decibels at various loudnesses, and compared to the raw data. A linear function was used to derive a conversion from the raw data into a decibel output for volume.
 
 When running the code, the RaspberryPi takes the values from each sensor and writes it into our initially created file. Then, it waits for the time period determined by the frequency, and repeats the process immediately after this wait. When the button is pressed again or the program is stopped on the computer, the RaspberryPi stops taking measurements. The file is closed and saved into the desired folder, and we have the obtained data for each sensor in a csv file format.
 
@@ -123,10 +123,17 @@ When running the code, the RaspberryPi takes the values from each sensor and wri
 We measured the comfort of each type of ride for a stretch of road from the corner of S Negley Ave and Fifth Ave to the corner of Morewood Ave and Fifth Ave. This is a common route for students from Shadyside to travel to school. To carry out our tests, we securely fastened the RaspberryPi and breadboard with sensors in an open box. For each mode of tranportation, we placed and firmly held or taped the box in place on the ground between the feet of where we would sit or stand. We started and ended sampling at the same location for each mode of transportation, so the amount of time varied for slower modes of transportation (the scooter especially). In each case, we did not talk or make noise during testing so that any sound levels were from the surrounding environment.
 
 ### Noise Results
+Figure 4 (below) displays the raw data results for the noise during the trips for each mode of transportation. While the low sampling rate causes the signal to be very erratic and difficult to draw conclusions to, the following Figure 5 shows a moving window average of the raw data using **THISMANY** points. In Figure 5, a few trends can be easily observed.
 
+First and foremost, the length of each graph shows how long each of the rides took. The result is not at all surprising: the car was the fastest, taking about 120 seconds, while the bus was only marginally slower, taking about 135 seconds. The scooter, however, took much longer to reach the destination: over 260 seconds. While this observation has little to do with the sensor itself, this is the reason the plots all vary in length and it is important to keep in mind.
+
+From Figure 5, we can also make deductions about the level of noise on each mode of transportation. The car is evidently the quietest, hovering around 60 dB during the ride. The bus was noticeably louder than the car, with most values just below the 80 dB range. Finally, the noise from the scooter was by far the most inconsistent. This is likely due to the fact that the noise from the scooter comes almost exclusively from the surrounding environment, not anything heppning 'inside' the vehicle. Thus, it depends largely on the traffic around it. At times, the moving window average reached over 120 dB and below 40 dB. During the full ride, however, the scooter was overall the loudest mode of transportation with an average of **THISAVERAGENUMBER** dB.
+
+*Figure 4: Volume of sounds for each mode of transportation during a ride from S Negley Ave to Morewood Ave on Fifth Ave*
 ![db record!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/Sound%20Records.png)
-![SMA db record!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/SMA_20%20SoundRecords.png)
 
+*Figure 5: Moving window average of the volume of sounds while riding each mode of transportation*
+![SMA db record!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/SMA_20%20SoundRecords.png)
 
 ### Vibrations Results
 
@@ -141,6 +148,9 @@ We measured the comfort of each type of ride for a stretch of road from the corn
 
 ## Discussion
 Discuss the insights from the project
+
+compare modes of transport and make conclusion
+maybe lets mention how it was saturday to the bus was empty and perhaps quieter than usual
 
 
 
