@@ -4,7 +4,7 @@ Bus Ride Comfort
 
 Ride Comfort of different modes of transportation in Pittsburgh
 You can click this link to the report page
-https://korawichkavee.github.io/12740-Ridecomfort-Pittsburgh/
+https://korawichkavee.github.io/12740-Ridecomfort-Pittsburgh/ (Figures might not displayed properly)
 
 OR
 https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/index.md
