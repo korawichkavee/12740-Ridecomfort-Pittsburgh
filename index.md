@@ -124,6 +124,8 @@ We measured the comfort of each type of ride for a stretch of road from the corn
 
 ### Noise Results
 
+![db record!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/Sound%20Records.png)
+![SMA db record!](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/blob/gh-pages/footage%20and%20picture/SMA_20%20SoundRecords.png)
 
 
 ### Vibrations Results
