@@ -92,7 +92,7 @@ The temperature and humidity are both relatively static signals. Especially cons
 
 Sensing vibrations is much more challenging. This is a dynamic, aperiod signal. While we expect the signal to be 'centered' around 1g, sporadic motion from the vehicles causes it to vary at random intervals. These variations tend to be a function of external sources, such as potholes and road conditions, stops and traffic lights, other cars, driving habits, etc. Thus, we cannot expect a consistent, periodic signal. Instead, we sample the signal at a rate high enough to capture these sudden variations in acceleration and use this to quantify the vibrations during the ride.
 
-Sound sensing poses and entirely new set of challenges. Sound signals are dynamic, periodic signals that cover a very large range of frequencies (up to and above 1kHz). Due to limitations of the sensors and equipment, sampling rate is severely limited to the point where effectively all sound signals are aliased. Thus, trying to determine the sound wave frequencies is futile. Instead, we focus our efforts on measuring volume: magnitude of the sound waves. This magnitude is converted into decibels to easily compare to human comfort levels.
+Sound sensing poses and entirely new set of challenges. Sound signals are dynamic, periodic signals that cover a very large range of frequencies (up to and above 1kHz). Due to limitations of the sensors and equipment, sampling rate is severely limited to the point where effectively all sound signals are aliased. Thus, trying to determine the sound wave frequencies is futile. Instead, we focus our efforts on measuring volume: magnitude of the sound waves. This magnitude is converted into decibels to easily compare to human comfort levels. For this analysis, it is important to note that normal speech is around 60 dB and any sound above 120 dB is perceived as discomfort. [^2]
 
 ### Sensors Used - In Depth
 An outline of the sensor descriptions and specifications is show in Table 1. The final setup of the sensor with the RaspberryPi is shown in Figure 3 below.
@@ -100,7 +100,7 @@ An outline of the sensor descriptions and specifications is show in Table 1. The
 *Table 1: Sensor descriptions and specifications*
 | Sensor | Description | Physical Principle | Characteristics | Additional Notes |
 | ----------- | ----------- | ----------- | ----------- | ----------- |
-| Microphone | Adafruit AGC Electret Microphone Amplifier - MAX9814 [^2] | The working principle of an electret condenser microphone is that the diaphragm acts as one plate of a capacitor. Vibrations produce changes in the distance between the diaphragm and the back plate. ... This change in voltage is amplified by the FET and the audio signal appears at the output, after a dc-blocking capacitor. [^3] | <ul><li>Supply Voltage: 2.7v-5.5v @ 3mA current</li><li>Output: 2Vpp on 1.25V bias</li></li><li>Frequency Response: 20Hz - 20 KHz</ul> | Add notes here |
+| Microphone | Adafruit AGC Electret Microphone Amplifier - MAX9814 [^3] | The working principle of an electret condenser microphone is that the diaphragm acts as one plate of a capacitor. Vibrations produce changes in the distance between the diaphragm and the back plate. ... This change in voltage is amplified by the FET and the audio signal appears at the output, after a dc-blocking capacitor. [^4] | <ul><li>Supply Voltage: 2.7v-5.5v @ 3mA current</li><li>Output: 2Vpp on 1.25V bias</li></li><li>Frequency Response: 20Hz - 20 KHz</ul> | Add notes here |
 | Accelerometer | Add description here | Add the phyisical principle of the sensor here | Add specs here | Add notes here |
 | Temperature and Humidity | Add description here | Add the phyisical principle of the sensor here | Add specs here | Add notes here |
 
@@ -158,7 +158,7 @@ Figure 9 (below) shows the temperature on each mode of transportation during the
 ## Discussion
 Overall, the project succeeded and the obtained data provided a clear picture on the levels of comfort for each ride. This would be especially insightful if we could repeat the test throughout the year (varying outdoor weather conditions) and at various times of day (varying bus crowdedness and street traffic). However, from simply testing on one day we can still make valuable deductions. The scooter was clearly the noisiest and bumpiest ride. The humidity for the scooter was also uncomfortably high. While the temperature was comfortable, this was not only at the bottom of the human comfort range but also only comfortable because the weather happened to be comfortable on that day. All in all, while a scooter might be a low-cost or convenient mode of transportation, it is by far the least comfortable.
 
-Comparing between the car and the bus is more difficult. Both performed well and proved to be comfortable modes of transportation. The temperature and humidity were nearly identical for the car and the bus, and both fell within the human comfort levels. Vibrations from both rides were also comparable and low, each with minimal vibrations and occasional spikes
+Comparing between the car and the bus is more difficult. Both performed well and proved to be comfortable modes of transportation. The temperature and humidity were nearly identical for the car and the bus, and both fell within the human comfort levels. Vibrations from both rides were also comparable and low, each with minimal vibrations and occasional spikes. For the volume of sound, the car was quieter than the bus.
 
 compare modes of transport and make conclusion
 maybe lets mention how it was saturday to the bus was empty and perhaps quieter than usual
@@ -169,6 +169,7 @@ maybe lets mention how it was saturday to the bus was empty and perhaps quieter 
 -------------------------------------------------------------------
 ## References and Footnotes
 [^1]: https://www.maplesoft.com/products/maple/app_gallery/pdf/Condition_Air_into_the_Human_Comfort_Zone.pdf
-[^2]: https://www.cuidevices.com/product-spotlight/electret-condenser-microphones
-[^3]: https://learn.adafruit.com/adafruit-agc-electret-microphone-amplifier-max9814/
+[^2]: https://www.noisequest.psu.edu/noisebasics-basics.html
+[^3]: https://www.cuidevices.com/product-spotlight/electret-condenser-microphones
+[^4]: https://learn.adafruit.com/adafruit-agc-electret-microphone-amplifier-max9814/
 
