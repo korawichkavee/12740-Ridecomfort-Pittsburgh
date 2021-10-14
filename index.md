@@ -2,10 +2,6 @@
 
 **Members: Korawich Kavee, Jacobo Kirsch Tornell, Guillermo Montero, and Albin Wells**
 
-#### TO DO: (1) Finish sensor spec sheet (with citations), (2) add graphs and discussion on results, (3) add final conclusions, (4) read over full report and review writing and formatting
-
-**To delete later: [Canvas project rubric link](https://canvas.cmu.edu/courses/25498/discussion_topics/362646)
-
 Website Link: [Github Project](https://korawichkavee.github.io/12740-Ridecomfort-Pittsburgh/)
 
 Video Link: [Ride Comfort Video](https://www.youtube.com/watch?v=bcNrlpfi9SA&ab_channel=KorawichKavee)
