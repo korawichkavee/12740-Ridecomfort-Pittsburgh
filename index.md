@@ -4,7 +4,9 @@
 
 Website Link: [Github Project](https://korawichkavee.github.io/12740-Ridecomfort-Pittsburgh/)
 
-Video Link: [Ride Comfort Video](https://www.youtube.com/watch?v=bcNrlpfi9SA&ab_channel=KorawichKavee)
+Video Link1: [Oral Presentation Video](https://youtu.be/pqfPOIXPyHE)
+
+Video Link2: [Ride Comfort Video](https://www.youtube.com/watch?v=bcNrlpfi9SA&ab_channel=KorawichKavee)
 
 Source Code: [Ride Comfort Code](https://github.com/korawichkavee/12740-Ridecomfort-Pittsburgh/tree/main/python%20code%20program)
 
